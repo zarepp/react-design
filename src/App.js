@@ -5,7 +5,18 @@ import phone from './img/phone.png';
 import free from './img/free-scan.png';
 import './App.css';
 
+import Scan from './components/scan';
+import Clean from './components/clean';
+import ModelOne from './components/modalOne';
+
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      status: "scan",
+    }
+  }
+
   render() {
     return (
       <div className="main">
@@ -13,9 +24,9 @@ class App extends Component {
           <div className="container">
             <div id="logo">
               <img src={logo} />
-            </div>
-            <div id="badge">
-              <img src={badge} />
+              <div id="badge">
+                <img src={badge} />
+              </div>
             </div>
           </div>
         </header>
@@ -29,12 +40,37 @@ class App extends Component {
 
         <section id="showcase">
           <div className="container">
-            <img class="img_bottom" src={phone} />
-            <img class="img_top" src={free} />
+            <div className="img_bundle1">
+              <img class="img_bottom" src={phone} />
+              <img class="img_top" src={free} />
+            </div>
           </div>
         </section>
+
+        { this.state.status === "scan" ? <Scan updateStatus={() => this.updateStatus()} /> : 
+            this.state.status === "clean" ? <Clean updateStatus={() => this.updateStatus2()}/> :
+              this.state.status === "register" ? <ModelOne updateStatus={() => this.updateStatus3()}/> : <ModelTwo />}
+
       </div>
     );
+  }
+
+  updateStatus() {
+    this.setState({
+      status: "clean",
+    })
+  }
+
+  updateStatus2() {
+    this.setState({
+      status: "register",
+    })
+  }
+
+  updateStatus3() {
+    this.setState({
+      status: "confirm",
+    })
   }
 }
 
