@@ -5,6 +5,7 @@ import download from './../img/download.png'
 import clock from './../img/clock-circular-outline.png';
 
 // import Button from './../core/Button';
+import DownloadInfo from './../core/DownloadInfo';
 
 export default class ModalOne extends Component {
 	constructor() {
@@ -41,7 +42,7 @@ export default class ModalOne extends Component {
 					</div>
 
 
-				<div className="list2">
+					{/* <div className="list2">
 						<ul>
 							<li>
 								<img className="download" src={download} />
@@ -58,7 +59,10 @@ export default class ModalOne extends Component {
 								</div>
 							</li>
 						</ul>
-					</div>
+					</div> */}
+
+					<DownloadInfo />
+
 				</div>
 
 			</div>

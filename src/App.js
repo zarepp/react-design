@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import logo from './img/logo.png';
 import badge from './img/badge.png';
 import phone from './img/phone.png';
-import free from './img/free-scan.png';
 import './App.css';
 
 import Scan from './components/scan';
@@ -34,7 +33,7 @@ class App extends Component {
 
         <section id="title">
           <div className="container">
-            <h1>IS YOUR DEVICE PROTECTED?</h1>
+            <p class="header">IS YOUR DEVICE PROTECTED?</p>
             <p>FIND OUT WITH OUR FREE SCAN NOW</p>
           </div>
         </section>
@@ -43,7 +42,6 @@ class App extends Component {
           <div className="container">
             <div className="img_bundle1">
               <img className="img_bottom" src={phone} />
-              <img className="img_top" src={free} />
             </div>
           </div>
         </section>
