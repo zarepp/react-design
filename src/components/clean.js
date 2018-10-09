@@ -7,8 +7,8 @@ export default class Clean extends Component {
        return(
         <section id="clean">
           <div className="container">
-            <div class="box">
-              <div class="instruction">
+            <div className="box">
+              <div className="instruction">
                 <h1>POSIBLE INFECTIONS HAVE BEEN DETECTED</h1>
               </div>
               <div className="list">
@@ -36,7 +36,7 @@ export default class Clean extends Component {
                 </ul>
               </div>
               <div>
-                <button onClick={this.props.updateStatus} class="button_1">SCAN MY DEVICE NOW</button>
+                <button onClick={this.props.updateStatus} className="button_1">SCAN MY DEVICE NOW</button>
               </div>
             </div>
           </div>
