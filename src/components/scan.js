@@ -7,16 +7,17 @@ export default class Scan extends Component {
        return(
         <section id="action">
           <div className="container">
-            <div class="box">
-              <div class="instruction">
+            <div className="box">
+              <div className="instruction">
                 <h1>FREE SCAN ENDS IN</h1>
               </div>
-              <div class="countdown">
+              <div className="countdown">
                 <h1>00:15</h1>
               </div>
               <div>
-                <button onClick={this.props.updateStatus} class="button_1">SCAN MY DEVICE NOW</button>
+                <button onClick={this.props.updateStatus} className="button_1">SCAN MY DEVICE NOW</button>
               </div>
+
               <div className="list">
                 <ul>
                   <li>
@@ -35,6 +36,7 @@ export default class Scan extends Component {
                   </li>
                 </ul>
               </div>
+
             </div>
           </div>
         </section>
