@@ -8,6 +8,7 @@ import './App.css';
 import Scan from './components/scan';
 import Clean from './components/clean';
 import ModelOne from './components/modalOne';
+import ModelTwo from './components/modalTwo';
 
 class App extends Component {
   constructor(props) {
@@ -41,8 +42,8 @@ class App extends Component {
         <section id="showcase">
           <div className="container">
             <div className="img_bundle1">
-              <img class="img_bottom" src={phone} />
-              <img class="img_top" src={free} />
+              <img className="img_bottom" src={phone} />
+              <img className="img_top" src={free} />
             </div>
           </div>
         </section>
