@@ -4,7 +4,7 @@ import badge from './img/badge.png';
 import phone from './img/phone.png';
 import './App.css';
 
-import Scan from './components/scan';
+import ScanComponent from './components/ScanComponent';
 import Clean from './components/clean';
 import ModelOne from './components/modalOne';
 import ModelTwo from './components/modalTwo';
@@ -31,22 +31,13 @@ class App extends Component {
           </div>
         </header>
 
-        <section id="title">
-          <div className="container">
-            <p class="header">IS YOUR DEVICE PROTECTED?</p>
-            <p>FIND OUT WITH OUR FREE SCAN NOW</p>
-          </div>
-        </section>
-
         <section id="showcase">
           <div className="container">
-            <div className="img_bundle1">
-              <img className="img_bottom" src={phone} />
-            </div>
+            <img className="img-phone" src={phone} />
           </div>
         </section>
 
-        { this.state.status === "scan" ? <Scan updateStatus={() => this.updateStatus()} /> : 
+        { this.state.status === "scan" ? <ScanComponent updateStatus={() => this.updateStatus()} /> : 
             this.state.status === "clean" ? <Clean updateStatus={() => this.updateStatus2()}/> :
               this.state.status === "register" ? <ModelOne updateStatus={() => this.updateStatus3()}/> : <ModelTwo />}
 
