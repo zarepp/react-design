@@ -1,6 +1,6 @@
 body{
   font: 15px/1.5 Arial, Helvetica, sans-serif;
-  background-color: black;
+  /* background-color: black; */
   padding: 0;
   margin: 0;
 }
@@ -28,7 +28,7 @@ body{
   left: 0;
   right: 0;
   color: white;
-  background: linear-gradient(to top, black, black 25%, transparent 50%);
+  background: linear-gradient(to top, black, black 40%, transparent 60%);
 }
 
 ul{
@@ -37,16 +37,30 @@ ul{
   list-style: none;
 }
 
-/* Main */
+.button{
+  text-align: center;
+}
+
+/* Main - Background image */
 .main{
   background: url('./img/bg.jpg') no-repeat;
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 1045px;
+  width: 100%;
+  height: auto;
 }
 
 /* Header */
+header{
+  height: 30px;
+}
+
 #logo{
   width: 100%;
 }
@@ -64,7 +78,8 @@ ul{
   float: right;
 }
 
-#title{
+/* Title */
+/* #title{
   text-align: center;
   color: #ffffff;
   font-weight: bold; 
@@ -76,16 +91,15 @@ ul{
 }
 
 #title .header{
-  margin-top: 10px;
   font-size: 24px;
-}
+} */
 
 
 /* Showcase */
 #showcase{
   z-index: 0;
   text-align: center;
-  margin-top: 70px;
+  margin-top: 140px;
 }
 
 #showcase .img-phone{
@@ -93,7 +107,6 @@ ul{
   margin-top: 10px;
   position: relative;
 }
-
 
 /* Action */
 #action {
@@ -105,13 +118,9 @@ ul{
 }
 
 #action .box{
-  padding-top: 25%;
-  /* background-color: grey;  */
+  margin-top: 30%;
+  /* background-color: grey; */
   padding-bottom: 5%;
-}
-
-.button{
-  text-align: center;
 }
 
 #action .container .image_free{
@@ -121,7 +130,7 @@ ul{
 
 #action .image_free{
   position: absolute;
-  top: 27%;
+  top: 24%;
   left: 53%;
   margin-bottom: 50px;
 }
@@ -142,48 +151,45 @@ ul{
   border-radius: 5px;
 }
 
-#action .countdown-box{
+/* Scan Component */
+.countdown-box{
   padding-top: 30px;
   text-align: center;
 }
 
-#action .countdown-box .message{
+.countdown-box .message{
   display: inline-block;
-  /* background-color: aqua; */
   font-weight: bolder;
-  text-align: right;
   padding-right: 20px;
   font-size: 24px;
 }
 
-#action .countdown-box .count{
+.countdown-box .count{
   display: inline-block;
   padding-bottom: 0;
   color: orange;
   font-weight: bolder;
   font-size: 36px;
-  /* background-color: #ffffff;  */
-  /* padding-top: 5px; */
 }
 
-#action .countdown-box .count p{
+.countdown-box .count p{
   margin: 0;
 }
 
-#action img{
-  height: 60px;
-  width: 60px;
-  float: left;
-}
+/* Clean Component */
 
 #action .container .progress{
   position: relative;
   text-align: center;
+  font-size: 30px;
+  position: absolute;
+  top: 150px;
+  left: 720px;
   /* background-color: aqua; */
 }
 
 #action .list-box{
-  /* padding-top: 15%; */
+  padding-top: 5%;
   margin-left: 28%;
   margin-right: 5%;
   /* background-color: beige; */
@@ -201,6 +207,11 @@ ul{
   color: gray;
 }
 
+.list-body ul li{
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
 .list-text{
   display: inline-block;
 }
@@ -216,32 +227,8 @@ ul{
   margin: 0;
 }
 
-/* Clean */
-#clean{
-  color: #ffffff;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  z-index: 10;
-  background-color: grey;
-  margin: auto;
-  padding-top: 60px;
-  padding-bottom: 40px;
-}
 
-#clean button{
-  background: green;
-  height: 38px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border: 0;
-  font-weight: bold;
-  color: #ffffff;
-  border-radius: 5px;
-}
-
-
-
+/* Modal CSS */
 .modal{
   background-color: #ffffff;
   border-radius: 5px;
@@ -253,32 +240,13 @@ ul{
   position: relative;
 }
 
-/* .list2{
-  max-width: 100%;
-  min-height: 40%;
-  position: relative;
-  font-size: 12px;
-  color: #ffffff;
-  padding-left: 15%;
-}
-
-.list2 img{
-  height: 60px;
-  width: 60px;
-  float: left;
-  padding-left: 40px;
-  padding-right: 40px;
-
-} */
-
-.gift{
+.img-gift img{
   position: absolute;
-  text-align: center;
-}
-
-.gift img{
-  width: 190px;
-  height: 150px;
+  width: 20%;
+  height: auto;
+  top: 14%;
+  left: 40%;
+  z-index: 3;
 }
 
 #register .modal-body{
@@ -342,6 +310,46 @@ ul{
 }
 
 #register button{
+  background: green;
+  height: 38px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 0;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.back-layout{
+  padding-top: 25%;
+}
+
+.mini-container{
+  overflow: hidden;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: aqua;
+}
+
+#claim{
+  padding: 10px;
+  margin-top: 10px;
+  background-color: blue;
+  position: relative;
+}
+
+#claim input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-left-style: none;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+#claim button{
   background: green;
   height: 38px;
   padding-left: 20px;

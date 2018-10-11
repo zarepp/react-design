@@ -1,10 +1,11 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import Gift from './../img/gift.png'
 
 import download from './../img/download.png'
 import clock from './../img/clock-circular-outline.png';
 
 // import Button from './../core/Button';
+import Modal from './../core/Modal';
 import DownloadInfo from './../core/DownloadInfo';
 
 export default class ModalOne extends Component {
@@ -15,11 +16,11 @@ export default class ModalOne extends Component {
 	render() {
 		return (
 			<div className="backdrop">
-					{/* <div className="gift">
-						<img src={Gift} />
-					</div> */}
-									<div className="container">
-					<div className="modal">
+				<div className="container">
+					<div className="img-gift">
+		 				<img src={Gift} />
+		 			</div> 
+					<Modal>
 						<div id="register">
 							<p>To start cleaning, register NOW & get FREE memory booster</p>
 							<div>
@@ -38,34 +39,11 @@ export default class ModalOne extends Component {
 									</div>
 								</form>
 							</div>
-						</div>
-					</div>
-
-
-					{/* <div className="list2">
-						<ul>
-							<li>
-								<img className="download" src={download} />
-								<div>
-									<h1>78,681 Download</h1>
-									<p>in the last 7 days</p>
-								</div>
-							</li>
-							<li>
-								<img src={clock} />
-								<div>
-									<h1>Most Recent Download</h1>
-									<p>Less than a minute ago</p>
-								</div>
-							</li>
-						</ul>
-					</div> */}
-
+						</div>	
+					</Modal>
 					<DownloadInfo />
-
 				</div>
-
 			</div>
-		)
+		);
 	}
 }

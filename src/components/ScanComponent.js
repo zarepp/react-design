@@ -26,10 +26,10 @@ export default class ScanComponent extends Component {
               </div>
               <div className="box">
                 <div className="countdown-box">
-                  <div class="message">
+                  <div className="message">
                     <p>FREE SCAN ENDS IN</p>
                   </div>
-                  <div class="count">
+                  <div className="count">
                     <p>00:15</p>
                   </div>
                 </div>

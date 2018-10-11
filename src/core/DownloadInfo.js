@@ -10,17 +10,21 @@ export default class DownloadInfo extends Component {
 			<div className="download-info">
         <ul>
           <li>
-            <img id="img-download" src={download} />
             <div>
-              <h1>78,681 Download</h1>
-              <p>in the last 7 days</p>
+              <img id="img-download" src={download} />
+            </div>
+            <div>
+              <p className="download-header">78,681 Download</p>
+              <p className="download-body">in the last 7 days</p>
             </div>
           </li>
           <li>
-            <img id="img-download" src={clock} />
             <div>
-              <h1>Most Recent Download</h1>
-              <p>Less than a minute ago</p>
+              <img id="img-download" src={clock} />
+            </div>
+            <div>
+              <p className="download-header">Most Recent Download</p>
+              <p className="download-body">Less than a minute ago</p>
             </div>
           </li>
         </ul>
