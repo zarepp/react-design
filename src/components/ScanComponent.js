@@ -16,7 +16,7 @@ export default class ScanComponent extends Component {
               <div>
                 <section id="title">
                   <div className="container">
-                    <p class="header">IS YOUR DEVICE PROTECTED?</p>
+                    <p className="header">IS YOUR DEVICE PROTECTED?</p>
                     <p>FIND OUT WITH OUR FREE SCAN NOW</p>
                   </div>
                 </section>

@@ -106,9 +106,11 @@ ul{
 
 #action .box{
   padding-top: 25%;
+  /* background-color: grey;  */
+  padding-bottom: 5%;
 }
 
-#action .button{
+.button{
   text-align: center;
 }
 
@@ -147,7 +149,7 @@ ul{
 
 #action .countdown-box .message{
   display: inline-block;
-  background-color: aqua;
+  /* background-color: aqua; */
   font-weight: bolder;
   text-align: right;
   padding-right: 20px;
@@ -156,7 +158,7 @@ ul{
 
 #action .countdown-box .count{
   display: inline-block;
-  padding: 0;
+  padding-bottom: 0;
   color: orange;
   font-weight: bolder;
   font-size: 36px;
@@ -164,10 +166,54 @@ ul{
   /* padding-top: 5px; */
 }
 
+#action .countdown-box .count p{
+  margin: 0;
+}
+
 #action img{
   height: 60px;
   width: 60px;
   float: left;
+}
+
+#action .container .progress{
+  position: relative;
+  text-align: center;
+  /* background-color: aqua; */
+}
+
+#action .list-box{
+  /* padding-top: 15%; */
+  margin-left: 28%;
+  margin-right: 5%;
+  /* background-color: beige; */
+  /* text-align: center; */
+}
+
+.list-header{
+  font-weight: bold;
+}
+
+.list-body{
+  margin-left: 5%;
+  margin-right: 40%;
+  padding-bottom: 5%; 
+  color: gray;
+}
+
+.list-text{
+  display: inline-block;
+}
+
+.list-num{
+  float: right;
+  color: #ffffff;
+}
+
+.list-body ul li p{
+  display: inline-block;
+  background-color: black;
+  margin: 0;
 }
 
 /* Clean */

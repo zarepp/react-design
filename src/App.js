@@ -5,7 +5,7 @@ import phone from './img/phone.png';
 import './App.css';
 
 import ScanComponent from './components/ScanComponent';
-import Clean from './components/clean';
+import CleanComponent from './components/CleanComponent';
 import ModelOne from './components/modalOne';
 import ModelTwo from './components/modalTwo';
 
@@ -38,7 +38,7 @@ class App extends Component {
         </section>
 
         { this.state.status === "scan" ? <ScanComponent updateStatus={() => this.updateStatus()} /> : 
-            this.state.status === "clean" ? <Clean updateStatus={() => this.updateStatus2()}/> :
+            this.state.status === "clean" ? <CleanComponent updateStatus={() => this.updateStatus2()}/> :
               this.state.status === "register" ? <ModelOne updateStatus={() => this.updateStatus3()}/> : <ModelTwo />}
 
       </div>
